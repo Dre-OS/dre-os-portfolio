@@ -7,8 +7,10 @@ export default function Home() {
         <>
             <div className="flex flex-col items-center justify-center min-h-screen min-w-screen py-2 gap-8">
                 <div className="flex flex-col items-center gap-3">
-                    <ProfilePicture />
-                    <h1 className="font-sans text-4xl font-semibold">Hendre Leigh O. Sagabaen</h1>
+                    <div className="flex flex-col items-center gap-5">
+                        <ProfilePicture />
+                        <h1 className="font-sans text-4xl font-semibold">Hendre Leigh O. Sagabaen</h1>
+                    </div>
                     <h2 className="font-mono text-xl font-semibold">Software Engineer | Fullstack Web Developer | Data science & Cybersecurity Enthusiast</h2>
                 </div>
                 <div className="flex flex-col items-center gap-3">
@@ -37,7 +39,6 @@ export default function Home() {
                         <Devicon.DotNetPlainIcon size="40px" color="white" />
                     </div>
                 </div>
-                {/* <Carousel items={["hello","world","lmao"]} visibleItems={2} renderItem={()=>{return item;}}></Carousel> */}
             </div>
         </>
     );
