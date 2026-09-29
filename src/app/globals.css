@@ -3,12 +3,17 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --color-platinum: #eae6e5;
+  --color-jet: #12130f;
+  --color-dark-cyan: #5b9279;
+  --color-hide: #c6b89e;
+  --font-sans: var(--font-jost-sans);
   --font-mono: var(--font-geist-mono);
 }
 
