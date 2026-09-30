@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Install Vercel CLI
+        run: npm install -g vercel@48.0.0
       - name: Deploy to Vercel Action
         uses: EvanNotFound/vercel-deployment-for-github-actions@v1
         with:
