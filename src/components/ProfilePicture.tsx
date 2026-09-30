@@ -15,7 +15,7 @@ function ProfilePicture() {
   return (
     <div>
       <motion.div
-      className="relative h-50 w-50 transform-3d"
+      className="relative h-40 w-40 transform-3d sm:h-50 sm:w-50"
       animate={{ rotateY: flipping ? 180 : 0 }}
       transition={{
         duration: 0.8,
