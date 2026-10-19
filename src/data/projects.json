@@ -90,7 +90,7 @@
     {
         "id": "12",
         "logo": "",
-        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/v1792363413/PAWS_LOGO2_fcvrsg.webp",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/t_Transparency/PAWS_LOGO2_fcvrsg.webp",
         "name": "PAWS Logo",
         "description": "An early prototype logo of PAAW (formerly PAWS)",
         "tags": "creatives, photo-editing, gimp, iconography"
@@ -98,7 +98,7 @@
     {
         "id": "13",
         "logo": "",
-        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/v1792363378/GymTayo_vtfsmp.webp",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/t_Transparency/GymTayo_vtfsmp.webp",
         "name": "GymTayo Logo",
         "description": "An early prototype logo for a thesis idea involving Gym Gamification",
         "tags": "creatives, photo-editing, gimp, iconography"
@@ -106,7 +106,7 @@
     {
         "id": "14",
         "logo": "",
-        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/v1792359248/Logo_mono_2_qzeqnv.png",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/t_Transparency/Logo_mono_2_qzeqnv.png",
         "name": "DRE_OS Logo",
         "description": "A personal branding logo",
         "tags": "creatives, photo-editing, gimp, iconography"
@@ -114,13 +114,21 @@
     {
         "id": "15",
         "logo": "",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/t_Transparency/little_red_server_logo_l2paxl.webp",
+        "name": "Little Red Logo",
+        "description": "A branding logo for the self-hosted server",
+        "tags": "creatives, photo-editing, gimp, iconography"
+    },
+    {
+        "id": "16",
+        "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,g_south,h_1000,w_1000/PXL_20250105_110214279.MP_1_flh91i.jpg",
         "name": "Dash Coffee Snap",
         "description": "A photo subject study involving a coffee shop",
         "tags": "creatives, photo-editing, snapseed, photography"
     },
     {
-        "id": "16",
+        "id": "17",
         "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,g_south,h_1000,w_1000/PXL_20241004_071755361_oslipe.jpg",
         "name": "Zambales Harbor Snap",
@@ -128,7 +136,7 @@
         "tags": "creatives, photo-editing, snapseed, photography"
     },
     {
-        "id": "17",
+        "id": "18",
         "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,g_south,h_1000,w_1000/1000045017_ckzxb5.jpg",
         "name": "Isabela Paddies Snap",
@@ -136,7 +144,7 @@
         "tags": "creatives, photo-editing, snapseed, photography"
     },
     {
-        "id": "18",
+        "id": "19",
         "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,g_south,h_1000,w_1000/1000022474_n9ogiz.jpg",
         "name": "Poblacion Snap",
@@ -144,7 +152,7 @@
         "tags": "creatives, photo-editing, snapseed, photography"
     },
     {
-        "id": "19",
+        "id": "20",
         "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,g_south,h_1000,w_1000/PXL_20250424_102602785_hjokmo.jpg",
         "name": "Golden Electric Snap",
@@ -152,7 +160,7 @@
         "tags": "creatives, photo-editing, snapseed, photography"
     },
     {
-        "id": "20",
+        "id": "21",
         "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,h_1000,w_1000/PXL_20250201_032326206_pwrn96.jpg",
         "name": "Flower Snap",
@@ -160,7 +168,7 @@
         "tags": "creatives, photo-editing, snapseed, photography"
     },
     {
-        "id": "21",
+        "id": "22",
         "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/v1792357495/24_bf6aho.webp",
         "name": "24",
@@ -168,7 +176,7 @@
         "tags": "creatives, photo-editing, snapseed, photography"
     },
     {
-        "id": "22",
+        "id": "23",
         "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,g_north,h_1000,w_1000/IMG20221220152812_5_ertfvt.webp",
         "name": "Power",
