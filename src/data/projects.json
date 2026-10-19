@@ -1,0 +1,179 @@
+[
+    {
+        "id": "1",
+        "logo": "https://res.cloudinary.com/dihmbrhjw/image/upload/v1791989724/transient-logo_pnaie7.webp",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/v1792351049/brave_OwM8ub71gz_f5ol9s.webp",
+        "name": "Transient CRM",
+        "description": "A Customer Relation Management system built to manage transient accomodation workflow",
+        "tags": "software, crm, business-management, authentication"
+    },
+    {
+        "id": "2",
+        "logo": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,h_100,w_100/PAAW_lktb8k.webp",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,g_west,h_1080,w_1920/paaw-sc_hn4by0.webp",
+        "name": "PAAW",
+        "description": "A Decision Support System for Provincial Veterinary Office",
+        "tags": "software, decision-support, veterinary"
+    },
+    {
+        "id": "3",
+        "logo": "https://res.cloudinary.com/dihmbrhjw/image/upload/v1764215536/ITBYTES_pqpzv9.webp",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/v1792373682/brave_RerrcW06yX_wlqxbi.png",
+        "name": "ITBytes IMS",
+        "description": "A full-stack, distributed Information Management system for ITBytes",
+        "tags": "software, full-stack, inventory"
+    },
+    {
+        "id": "4",
+        "logo": "",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/v1792378352/Confidential_xmtb6f.webp",
+        "name": "Fullsuite Modules",
+        "description": "Various software development projects within fullsuite ecosystem",
+        "tags": "software, full-stack, internal-tools, tdd"
+    },
+    {
+        "id": "5",
+        "logo": "https://res.cloudinary.com/dihmbrhjw/image/upload/v1792383698/little_red_server_logo_l2paxl.webp",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/v1792378352/Confidential_xmtb6f.webp",
+        "name": "Little Red Server",
+        "description": "A docker-based bare metal server running linux",
+        "tags": "hardware, server-management, docker, linux"
+    },
+    {
+        "id": "6",
+        "logo": "",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,h_1000,w_1000/Itbytes_Anniv_v3i2fl.webp",
+        "name": "ITBytes Anniversary Post Draft",
+        "description": "A Facebook post edit for the celebration of ITByte's 10th Anniversary",
+        "tags": "creatives, layouting, canva"
+    },
+    {
+        "id": "7",
+        "logo": "",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/v1792357962/programmathon_stuff_qitptm.jpg",
+        "name": "MICRO-JPCS Programmathon Post",
+        "description": "A Facebook post edit for the Programmathon competition during Multimedia Week",
+        "tags": "creatives, layouting, gimp"
+    },
+    {
+        "id": "8",
+        "logo": "",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,h_1000,w_1000/484868887_1079847657493153_457066377528613492_n_riignv.jpg",
+        "name": "ICT Proficiency Congratulatory post",
+        "description": "A Facebook post edit for greeting a student on exemplary perfomance on the ICT Proficiency Exam",
+        "tags": "creatives, layouting, gimp"
+    },
+    {
+        "id": "9",
+        "logo": "",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,g_west,h_1000,w_1000/paaw_styleguide_wmcf5m.webp",
+        "name": "PAAW Style Guide",
+        "description": "A style guide created for the PAAW frontend",
+        "tags": "creatives, photo-editing, figma"
+    },
+    {
+        "id": "10",
+        "logo": "",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,g_west,h_1000,w_1000/dreos_css_styleguide_qpuolm.webp",
+        "name": "Dre_OS Style Guide",
+        "description": "A style guide created for a CSS demo project",
+        "tags": "creatives, photo-editing, gimp"
+    },
+    {
+        "id": "11",
+        "logo": "",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/v1792375392/spazio_styleguide_qnzd7h.webp",
+        "name": "SPAZIO Style Guide",
+        "description": "A machine learning model for image recognition.",
+        "tags": "creatives, photo-editing, figma"
+    },
+    {
+        "id": "12",
+        "logo": "",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/v1792363413/PAWS_LOGO2_fcvrsg.webp",
+        "name": "PAWS Logo",
+        "description": "An early prototype logo of PAAW (formerly PAWS)",
+        "tags": "creatives, photo-editing, gimp, iconography"
+    },
+    {
+        "id": "13",
+        "logo": "",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/v1792363378/GymTayo_vtfsmp.webp",
+        "name": "GymTayo Logo",
+        "description": "An early prototype logo for a thesis idea involving Gym Gamification",
+        "tags": "creatives, photo-editing, gimp, iconography"
+    },
+    {
+        "id": "14",
+        "logo": "",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/v1792359248/Logo_mono_2_qzeqnv.png",
+        "name": "DRE_OS Logo",
+        "description": "A personal branding logo",
+        "tags": "creatives, photo-editing, gimp, iconography"
+    },
+    {
+        "id": "15",
+        "logo": "",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,g_south,h_1000,w_1000/PXL_20250105_110214279.MP_1_flh91i.jpg",
+        "name": "Dash Coffee Snap",
+        "description": "A photo subject study involving a coffee shop",
+        "tags": "creatives, photo-editing, snapseed, photography"
+    },
+    {
+        "id": "16",
+        "logo": "",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,g_south,h_1000,w_1000/PXL_20241004_071755361_oslipe.jpg",
+        "name": "Zambales Harbor Snap",
+        "description": "A photo subject study involving a harbor",
+        "tags": "creatives, photo-editing, snapseed, photography"
+    },
+    {
+        "id": "17",
+        "logo": "",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,g_south,h_1000,w_1000/1000045017_ckzxb5.jpg",
+        "name": "Isabela Paddies Snap",
+        "description": "A photo subject study involving rice paddies",
+        "tags": "creatives, photo-editing, snapseed, photography"
+    },
+    {
+        "id": "18",
+        "logo": "",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,g_south,h_1000,w_1000/1000022474_n9ogiz.jpg",
+        "name": "Poblacion Snap",
+        "description": "A photo subject study involving a streetside",
+        "tags": "creatives, photo-editing, snapseed, photography"
+    },
+    {
+        "id": "19",
+        "logo": "",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,g_south,h_1000,w_1000/PXL_20250424_102602785_hjokmo.jpg",
+        "name": "Golden Electric Snap",
+        "description": "A photo subject study involving a streetside electrical pole",
+        "tags": "creatives, photo-editing, snapseed, photography"
+    },
+    {
+        "id": "20",
+        "logo": "",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,h_1000,w_1000/PXL_20250201_032326206_pwrn96.jpg",
+        "name": "Flower Snap",
+        "description": "A photo subject study involving a flower",
+        "tags": "creatives, photo-editing, snapseed, photography"
+    },
+    {
+        "id": "21",
+        "logo": "",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/v1792357495/24_bf6aho.webp",
+        "name": "24",
+        "description": "A personal art project featuring a man looking up at the universe",
+        "tags": "creatives, photo-editing, snapseed, photography"
+    },
+    {
+        "id": "22",
+        "logo": "",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,g_north,h_1000,w_1000/IMG20221220152812_5_ertfvt.webp",
+        "name": "Power",
+        "description": "A personal art project featuring a man seemingly having mind-bending power",
+        "tags": "creatives, photo-editing, snapseed, photography"
+    }
+    
+]
