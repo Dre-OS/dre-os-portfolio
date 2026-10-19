@@ -29,3 +29,28 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes scroll-hint-nudge {
+  0%, 70%, 100% {
+    transform: translateY(0);
+  }
+
+  76%, 84% {
+    transform: translateY(0.4rem);
+  }
+}
+
+.scroll-projects-hint {
+  animation: scroll-hint-nudge 4s ease-in-out infinite;
+}
+
+.scroll-projects-hint:hover,
+.scroll-projects-hint:focus-visible {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-projects-hint {
+    animation: none;
+  }
+}
