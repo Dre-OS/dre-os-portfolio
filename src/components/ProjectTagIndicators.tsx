@@ -27,12 +27,12 @@ export function ProjectTagIndicators({
   return (
     <ul
       aria-label="Project tags"
-      className="flex flex-wrap gap-2"
+      className="flex flex-wrap gap-1.5 sm:gap-2"
     >
       {visibleTags.map((tag) => (
         <li
           key={tag}
-          className={`rounded-full border px-2.5 py-1 font-mono text-[0.65rem] uppercase tracking-[0.08em] ${toneClasses}`}
+          className={`rounded-full border px-1.5 py-0.5 font-mono text-[0.55rem] uppercase tracking-[0.06em] sm:px-2.5 sm:py-1 sm:text-[0.65rem] sm:tracking-[0.08em] ${toneClasses}`}
         >
           {tag}
         </li>
