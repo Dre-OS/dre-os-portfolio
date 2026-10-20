@@ -173,7 +173,7 @@
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/v1792357495/24_bf6aho.webp",
         "name": "24",
         "description": "A personal art project featuring a man looking up at the universe",
-        "tags": "creatives, photo-editing, snapseed, photography"
+        "tags": "creatives, photo-editing, gimp"
     },
     {
         "id": "23",
@@ -181,7 +181,7 @@
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,g_north,h_1000,w_1000/IMG20221220152812_5_ertfvt.webp",
         "name": "Power",
         "description": "A personal art project featuring a man seemingly having mind-bending power",
-        "tags": "creatives, photo-editing, snapseed, photography"
+        "tags": "creatives, photo-editing, gimp"
     }
     
 ]
