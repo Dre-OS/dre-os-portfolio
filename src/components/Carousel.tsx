@@ -1,5 +1,5 @@
 "use client"
-import { useEffect, useRef, useState, type ReactNode } from 'react'
+import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react'
 import { motion, useAnimationControls } from 'motion/react'
 import { Icon } from './Icon'
 
@@ -9,23 +9,55 @@ type CarouselProps = {
   autoScroll?: boolean
 }
 
+const MAX_VISIBLE_DOTS = 10
+
 function Carousel({ items, visibleItems = 1, autoScroll = false }: CarouselProps) {
   const [index, setIndex] = useState(0)
   const [isInView, setIsInView] = useState(false)
   const [isHovered, setIsHovered] = useState(false)
+  const [dotDirection, setDotDirection] = useState(1)
   const carouselRef = useRef<HTMLDivElement>(null)
   const viewportRef = useRef<HTMLDivElement>(null)
   const controls = useAnimationControls()
+  const dotControls = useAnimationControls()
 
   const maxIndex = Math.max(0, items.length - visibleItems)
   const targetX = `-${index * (visibleItems / items.length) * 100}%`
+  const visibleDotCount = Math.min(MAX_VISIBLE_DOTS, items.length)
+  const dotStart = Math.min(
+    Math.max(0, index - Math.floor(visibleDotCount / 2)),
+    Math.max(0, items.length - visibleDotCount),
+  )
+  const previousDotStartRef = useRef(dotStart)
+  const visibleDotIndexes = Array.from(
+    { length: visibleDotCount },
+    (_, dotOffset) => dotStart + dotOffset,
+  )
+  const hasPreviousDots = dotStart > 0
+  const hasNextDots = dotStart + visibleDotCount < items.length
 
-  const goToPrev = () => setIndex((current) => Math.max(0, current - 1))
-  const goToNext = () => setIndex((current) => Math.min(maxIndex, current + 1))
+  const setCarouselIndex = useCallback((nextIndex: number) => {
+    setDotDirection(nextIndex >= index ? 1 : -1)
+    setIndex(nextIndex)
+  }, [index])
+
+  const goToPrev = () => setCarouselIndex(Math.max(0, index - 1))
+  const goToNext = () => setCarouselIndex(Math.min(maxIndex, index + 1))
 
   useEffect(() => {
     controls.start({ x: targetX })
   }, [controls, targetX])
+
+  useEffect(() => {
+    if (previousDotStartRef.current === dotStart) return
+
+    previousDotStartRef.current = dotStart
+    dotControls.set({ x: dotDirection * 24 })
+    dotControls.start({
+      x: 0,
+      transition: { duration: 0.35, ease: 'easeOut' },
+    })
+  }, [dotControls, dotDirection, dotStart])
 
   useEffect(() => {
     const carousel = carouselRef.current
@@ -45,11 +77,11 @@ function Carousel({ items, visibleItems = 1, autoScroll = false }: CarouselProps
     if (!autoScroll || !isInView || isHovered || maxIndex === 0) return
 
     const timeout = window.setTimeout(() => {
-      setIndex((current) => (current >= maxIndex ? 0 : current + 1))
+      setCarouselIndex(index >= maxIndex ? 0 : index + 1)
     }, 5000)
 
     return () => window.clearTimeout(timeout)
-  }, [autoScroll, isInView, isHovered, maxIndex, index])
+  }, [autoScroll, isInView, isHovered, maxIndex, index, setCarouselIndex])
 
   return (
     <div
@@ -77,7 +109,7 @@ function Carousel({ items, visibleItems = 1, autoScroll = false }: CarouselProps
                     ? Math.min(maxIndex, index + 1)
                     : Math.max(0, index - 1)
 
-              setIndex(nextIndex)
+              setCarouselIndex(nextIndex)
               controls.start({ x: `-${nextIndex * (visibleItems / items.length) * 100}%` })
             }}
             style={{ width: `${(items.length / visibleItems) * 100}%` }}
@@ -95,27 +127,46 @@ function Carousel({ items, visibleItems = 1, autoScroll = false }: CarouselProps
         </div>
       </div>
 
-      <div className="mt-4 flex items-center justify-between gap-3 text-sm text-slate-300">
+      <div className="relative mt-4 flex min-h-10 items-center justify-center text-sm text-slate-300">
         <button
           type="button"
           aria-label="Previous slide"
           onClick={goToPrev}
           disabled={index === 0}
-          className="rounded-full px-3 py-1.5 transition hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-40"
+          className="absolute left-0 rounded-full px-3 py-1.5 transition hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-40"
         >
           <Icon name="chevronLeft" size={20} aria-hidden="true" />
         </button>
 
-        <div className="flex items-center gap-1.5 sm:gap-2">
-          {items.map((_, dotIndex) => (
-            <button
-              key={dotIndex}
-              type="button"
-              aria-label={`Go to slide ${dotIndex + 1}`}
-              onClick={() => setIndex(Math.min(dotIndex, maxIndex))}
-              className={`h-1.5 rounded-full transition-all sm:h-2.5 ${index === dotIndex ? 'w-4 bg-white sm:w-6' : 'w-1.5 bg-white/30 hover:bg-white/60 sm:w-2.5'}`}
-            />
-          ))}
+        <div className="relative flex max-w-full items-center overflow-hidden px-3">
+          <motion.span
+            aria-hidden="true"
+            animate={{ opacity: hasPreviousDots ? 1 : 0 }}
+            className="from-background via-background/90 pointer-events-none absolute inset-y-0 left-0 z-10 w-8 bg-gradient-to-r to-transparent sm:w-10"
+            initial={false}
+            transition={{ duration: 0.35, ease: 'easeOut' }}
+          />
+          <motion.div
+            animate={dotControls}
+            className="flex items-center gap-1.5 sm:gap-2"
+          >
+            {visibleDotIndexes.map((dotIndex) => (
+              <button
+                key={dotIndex}
+                type="button"
+                aria-label={`Go to slide ${dotIndex + 1}`}
+                onClick={() => setCarouselIndex(Math.min(dotIndex, maxIndex))}
+                className={`h-1.5 rounded-full transition-all sm:h-2.5 ${index === dotIndex ? 'w-4 bg-white sm:w-6' : 'w-1.5 bg-white/30 hover:bg-white/60 sm:w-2.5'}`}
+              />
+            ))}
+          </motion.div>
+          <motion.span
+            aria-hidden="true"
+            animate={{ opacity: hasNextDots ? 1 : 0 }}
+            className="from-background via-background/90 pointer-events-none absolute inset-y-0 right-0 z-10 w-8 bg-gradient-to-l to-transparent sm:w-10"
+            initial={false}
+            transition={{ duration: 0.35, ease: 'easeOut' }}
+          />
         </div>
 
         <button
@@ -123,7 +174,7 @@ function Carousel({ items, visibleItems = 1, autoScroll = false }: CarouselProps
           aria-label="Next slide"
           onClick={goToNext}
           disabled={index >= maxIndex}
-          className="rounded-full px-3 py-1.5 transition hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-40"
+          className="absolute right-0 rounded-full px-3 py-1.5 transition hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-40"
         >
           <Icon name="chevronRight" size={20} aria-hidden="true" />
         </button>
