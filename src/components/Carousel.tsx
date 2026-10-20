@@ -11,6 +11,9 @@ type CarouselProps = {
 
 function Carousel({ items, visibleItems = 1, autoScroll = false }: CarouselProps) {
   const [index, setIndex] = useState(0)
+  const [isInView, setIsInView] = useState(false)
+  const [isHovered, setIsHovered] = useState(false)
+  const carouselRef = useRef<HTMLDivElement>(null)
   const viewportRef = useRef<HTMLDivElement>(null)
   const controls = useAnimationControls()
 
@@ -25,17 +28,36 @@ function Carousel({ items, visibleItems = 1, autoScroll = false }: CarouselProps
   }, [controls, targetX])
 
   useEffect(() => {
-    if (!autoScroll || maxIndex === 0) return
+    const carousel = carouselRef.current
+    if (!carousel) return
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsInView(entry.isIntersecting),
+      { threshold: 0.1 },
+    )
+
+    observer.observe(carousel)
+
+    return () => observer.disconnect()
+  }, [])
+
+  useEffect(() => {
+    if (!autoScroll || !isInView || isHovered || maxIndex === 0) return
 
     const timeout = window.setTimeout(() => {
       setIndex((current) => (current >= maxIndex ? 0 : current + 1))
     }, 5000)
 
     return () => window.clearTimeout(timeout)
-  }, [autoScroll, maxIndex, index])
+  }, [autoScroll, isInView, isHovered, maxIndex, index])
 
   return (
-    <div className="w-full max-w-3xl mx-auto">
+    <div
+      ref={carouselRef}
+      className="w-full max-w-3xl mx-auto"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       <div ref={viewportRef} className="aspect-video overflow-hidden">
         <div className="gap-3 h-full overflow-hidden">
           <motion.div
