@@ -120,8 +120,8 @@ export function ProjectItem({
             </div>
           ) : null}
           <ProjectTagIndicators tags={tags} />
-          <h3 className="mb-2 mt-3 font-sans text-lg font-semibold">{title}</h3>
-          <p className="text-sm font-mono text-slate-300">{description}</p>
+          <h3 className="mb-2 mt-3 font-sans text-base font-semibold sm:text-lg">{title}</h3>
+          <p className="text-xs font-mono text-slate-300 sm:text-sm">{description}</p>
         </div>
         {typeof snapshot === 'string' ? (
           <ProjectImageModal
