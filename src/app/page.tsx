@@ -86,45 +86,45 @@ function HomeContent() {
                         {selectedProjectTypes.includes("creatives") || selectedProjectTypes.includes("all")?
                             <div className="flex max-w-5xl flex-wrap justify-center content-center gap-3 sm:gap-4">
                                 {/* Tools Logos */}
-                                <Icon src="https://res.cloudinary.com/dihmbrhjw/image/upload/v1792370235/gimp-logo_nfa7ya.svg" type="webp" size="clamp(24px, 9vw, 40px)" />
-                                <Icon src="https://res.cloudinary.com/dihmbrhjw/image/upload/v1792370247/photoshop-logo_hbxfil.svg" type="webp" size="clamp(24px, 9vw, 40px)" />
-                                <Icon src="https://res.cloudinary.com/dihmbrhjw/image/upload/v1792370862/snapseed-logo_w2udcd.svg" type="webp" size="clamp(24px, 9vw, 40px)" />
-                                <Icon name="figma" size="clamp(24px, 9vw, 40px)" color="white" />
+                                <Icon src="https://res.cloudinary.com/dihmbrhjw/image/upload/v1792370235/gimp-logo_nfa7ya.svg" type="webp" size="clamp(20px, 7vw, 40px)" />
+                                <Icon src="https://res.cloudinary.com/dihmbrhjw/image/upload/v1792370247/photoshop-logo_hbxfil.svg" type="webp" size="clamp(20px, 7vw, 40px)" />
+                                <Icon src="https://res.cloudinary.com/dihmbrhjw/image/upload/v1792370862/snapseed-logo_w2udcd.svg" type="webp" size="clamp(20px, 7vw, 40px)" />
+                                <Icon name="figma" size="clamp(20px, 7vw, 40px)" color="white" />
                             </div>
                         : null}
                         <div className="flex max-w-3xl flex-wrap justify-center gap-3 sm:gap-4">
                             {/* Language Logos */}
-                            <Icon name="javascript" size="clamp(24px, 9vw, 40px)" color="white" />
-                            <Icon name="typescript" size="clamp(24px, 9vw, 40px)" color="white" />
-                            <Icon name="csharp" size="clamp(24px, 9vw, 40px)" color="white" />
-                            <Icon name="python" size="clamp(24px, 9vw, 40px)" color="white" />
-                            <Icon name="java" size="clamp(24px, 9vw, 40px)" color="white" />
-                            <Icon name="flutter" size="clamp(24px, 9vw, 40px)" color="white" />
-                            <Icon name="visualbasic" size="clamp(24px, 9vw, 40px)" color="white" />
+                            <Icon name="javascript" size="clamp(20px, 7vw, 40px)" color="white" />
+                            <Icon name="typescript" size="clamp(20px, 7vw, 40px)" color="white" />
+                            <Icon name="csharp" size="clamp(20px, 7vw, 40px)" color="white" />
+                            <Icon name="python" size="clamp(20px, 7vw, 40px)" color="white" />
+                            <Icon name="java" size="clamp(20px, 7vw, 40px)" color="white" />
+                            <Icon name="flutter" size="clamp(20px, 7vw, 40px)" color="white" />
+                            <Icon name="visualbasic" size="clamp(20px, 7vw, 40px)" color="white" />
                         </div>
                         <div className="flex max-w-5xl flex-wrap justify-center gap-3 sm:gap-4">
                             {/* Tools Logos */}
-                            <Icon name="github" size="clamp(24px, 9vw, 40px)" color="white" />
-                            <Icon name="git" size="clamp(24px, 9vw, 40px)" color="white" />
-                            <Icon name="node" size="clamp(24px, 9vw, 40px)" color="white" />
-                            <Icon name="docker" size="clamp(28px, 10vw, 50px)" color="white" />
-                            <Icon name="azure" size="clamp(24px, 9vw, 40px)" color="white" />
-                            <Icon name="rabbitmq" size="clamp(24px, 9vw, 40px)" color="white" />
-                            <Icon name="mongodb" size="clamp(24px, 9vw, 40px)" color="white" />
-                            <Icon name="mysql" size="clamp(24px, 9vw, 40px)" color="white" />
-                            <Icon name="sqlite" size="clamp(24px, 9vw, 40px)" color="white" />
-                            <Icon name="dotnet" size="clamp(24px, 9vw, 40px)" color="white" />
-                            <Icon name="react" size="clamp(24px, 9vw, 40px)" color="white" />
-                            <Icon name="tailwind" size="clamp(24px, 9vw, 40px)" color="white" />
-                            <Icon name="mui" size="clamp(24px, 9vw, 40px)" color="white" />
-                            <Icon name="wordpress" size="clamp(24px, 9vw, 40px)" color="white" />
+                            <Icon name="github" size="clamp(20px, 7vw, 40px)" color="white" />
+                            <Icon name="git" size="clamp(20px, 7vw, 40px)" color="white" />
+                            <Icon name="node" size="clamp(20px, 7vw, 40px)" color="white" />
+                            <Icon name="docker" size="clamp(22px, 8vw, 50px)" color="white" />
+                            <Icon name="azure" size="clamp(20px, 7vw, 40px)" color="white" />
+                            <Icon name="rabbitmq" size="clamp(20px, 7vw, 40px)" color="white" />
+                            <Icon name="mongodb" size="clamp(20px, 7vw, 40px)" color="white" />
+                            <Icon name="mysql" size="clamp(20px, 7vw, 40px)" color="white" />
+                            <Icon name="sqlite" size="clamp(20px, 7vw, 40px)" color="white" />
+                            <Icon name="dotnet" size="clamp(20px, 7vw, 40px)" color="white" />
+                            <Icon name="react" size="clamp(20px, 7vw, 40px)" color="white" />
+                            <Icon name="tailwind" size="clamp(20px, 7vw, 40px)" color="white" />
+                            <Icon name="mui" size="clamp(20px, 7vw, 40px)" color="white" />
+                            <Icon name="wordpress" size="clamp(20px, 7vw, 40px)" color="white" />
                         </div>
                         <div className="flex max-w-5xl flex-wrap justify-center content-center gap-3 sm:gap-4">
                             {/* Tools Logos */}
-                            <Icon src="https://svgstack.com/media/img/white-claude-logo-gGPZ382926.webp" type="webp" size="clamp(24px, 9vw, 40px)" />
-                            <Icon src="https://svgstack.com/media/img/white-chatgpt-logo-SSnJ382924.webp" type="webp" size="clamp(24px, 9vw, 40px)" />
-                            <Icon src="https://svgstack.com/media/img/white-gemini-logo-qb7c386067.webp" type='webp' size="clamp(24px, 9vw, 40px)" />
-                            <Icon src="https://svgstack.com/media/img/white-qwenlm-logo-OpFe555230.webp" type='webp' size="clamp(24px, 9vw, 40px)" />
+                            <Icon src="https://svgstack.com/media/img/white-claude-logo-gGPZ382926.webp" type="webp" size="clamp(20px, 7vw, 40px)" />
+                            <Icon src="https://svgstack.com/media/img/white-chatgpt-logo-SSnJ382924.webp" type="webp" size="clamp(20px, 7vw, 40px)" />
+                            <Icon src="https://svgstack.com/media/img/white-gemini-logo-qb7c386067.webp" type='webp' size="clamp(20px, 7vw, 40px)" />
+                            <Icon src="https://svgstack.com/media/img/white-qwenlm-logo-OpFe555230.webp" type='webp' size="clamp(20px, 7vw, 40px)" />
                         </div>
 
                     </div>
