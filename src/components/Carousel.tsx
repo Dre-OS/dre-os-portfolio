@@ -86,11 +86,11 @@ function Carousel({ items, visibleItems = 1, autoScroll = false }: CarouselProps
   return (
     <div
       ref={carouselRef}
-      className="w-full max-w-3xl mx-auto"
+      className="w-full max-w-4xl mx-auto"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div ref={viewportRef} className="aspect-video overflow-hidden">
+      <div ref={viewportRef} className="aspect-3/4 overflow-hidden md:aspect-video">
         <div className="gap-3 h-full overflow-hidden">
           <motion.div
             className="flex h-full lg:cursor-default sm:cursor-grab touch-pan-y active:cursor-grabbing"

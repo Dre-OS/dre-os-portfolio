@@ -29,7 +29,7 @@ interface ProjectItemProps {
  *   - Snapshot fills the item with a gradient overlay (jet to transparent) for text/logo visibility.
  *   - Logo, title, and description are overlaid on the snapshot.
  *   - Logo disappears on hover of the item.
- *   - Responsive design with 16:9 aspect ratio.
+ *   - Responsive design with a 3:4 mobile aspect ratio and 16:9 desktop aspect ratio.
  */
 export function ProjectItem({
   logo,
@@ -71,7 +71,7 @@ export function ProjectItem({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="relative aspect-video w-full overflow-hidden">
+      <div className="relative aspect-3/4 w-full overflow-hidden md:aspect-video">
         {/* Snapshot */}
         {typeof snapshot === 'string' ? (
           <button
