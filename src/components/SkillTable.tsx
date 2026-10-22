@@ -1,6 +1,5 @@
 'use client';
 
-import { useId, useState } from "react";
 import { Icon } from "./Icon";
 import { Skill } from "./Skill";
 
@@ -12,6 +11,7 @@ const skillGroups = [
             ["Tailwind", "tailwind"],
             ["Material UI", "mui"],
             ["WordPress", "wordpress"],
+            ["Next.JS", "nextjs"]
         ],
     },
     {
@@ -19,15 +19,29 @@ const skillGroups = [
         skills: [
             ["Node.js", "node"],
             [".NET", "dotnet"],
+            ["Express", "express"],
+            ["Fastify", "fastify"],
+            ["FastAPI","fastapi"],
             ["RabbitMQ", "rabbitmq"],
+        ],
+    },
+    {
+        name: "Database",
+        skills: [
+            ["MongoDB", "mongodb"],
+            ["MySQL", "mysql"],
+            ["SQLite", "sqlite"],
+            ["Prisma","prisma"]
         ],
     },
     {
         name: "Infrastructure",
         skills: [
-            ["MongoDB", "mongodb"],
-            ["MySQL", "mysql"],
-            ["SQLite", "sqlite"],
+            ["Linux", "linux"],
+            ["Windows", "windows"],
+            ["Docker", "docker"],
+            ["Azure", "azure"],
+            ["Cloudflare","cloudflare"]
         ],
     },
     {
@@ -38,7 +52,7 @@ const skillGroups = [
             ["C#", "csharp"],
             ["Python", "python"],
             ["Java", "java"],
-            ["Dart / Flutter", "flutter"],
+            ["Dart", "flutter"],
             ["Visual Basic", "visualbasic"],
         ],
     },
@@ -49,79 +63,72 @@ const skillGroups = [
             ["GitHub", "github"],
             ["Docker", "docker"],
             ["Azure", "azure"],
+            ["Github Actions","ghactions"],
+            ["Vercel","vercel"]
         ],
     },
     {
-        name: "Design & AI",
+        name: "Design",
         skills: [
             ["Figma", "figma"],
             ["GIMP", "gimp"],
             ["Photoshop", "photoshop"],
             ["Snapseed", "snapseed"],
+            ["Mermaid","mermaid"]
+        ],
+    },
+    {
+        name: "AI",
+        skills: [
             ["Claude", "claude"],
-            ["ChatGPT", "chatgpt"],
+            ["OpenAI", "openai"],
             ["Gemini", "gemini"],
             ["Qwen", "qwen"],
+            ["Ollama","ollama"],
+            ["Claude Code","claudecode"],
+            ["Github Copilot","ghcopilot"]
+        ],
+    },
+    {
+        name: "Data Science",
+        skills: [
+            ["Jupyter Noteboor", "jupyter"],
+            ["Pandas", "pandas"],
+            ["Polars", "polars"],
+            ["Numpy", "numpy"],
         ],
     },
 ] as const;
 
-const externalIcons = {
-    gimp: { src: "https://res.cloudinary.com/dihmbrhjw/image/upload/v1792370235/gimp-logo_nfa7ya.svg", type: "svg" },
-    photoshop: { src: "https://res.cloudinary.com/dihmbrhjw/image/upload/v1792370247/photoshop-logo_hbxfil.svg", type: "svg" },
-    snapseed: { src: "https://res.cloudinary.com/dihmbrhjw/image/upload/v1792370862/snapseed-logo_w2udcd.svg", type: "svg" },
-    claude: { src: "https://svgstack.com/media/img/white-claude-logo-gGPZ382926.webp", type: "webp" },
-    chatgpt: { src: "https://svgstack.com/media/img/white-chatgpt-logo-SSnJ382924.webp", type: "webp" },
-    gemini: { src: "https://svgstack.com/media/img/white-gemini-logo-qb7c386067.webp", type: "webp" },
-    qwen: { src: "https://svgstack.com/media/img/white-qwenlm-logo-OpFe555230.webp", type: "webp" },
-} as const;
+// const externalIcons = {
+// } as const;
 
 type SkillIconName = Exclude<(typeof skillGroups)[number]["skills"][number][1], keyof typeof externalIcons>;
 
 function SkillIcon({ icon }: { icon: string }) {
-    if (icon in externalIcons) {
-        const externalIcon = externalIcons[icon as keyof typeof externalIcons];
-        return <Icon src={externalIcon.src} type={externalIcon.type} size={36} alt="" />;
-    }
+    // if (icon in externalIcons) {
+    //     const externalIcon = externalIcons[icon as keyof typeof externalIcons];
+    //     return <Icon src={externalIcon.src} type={externalIcon.type} size={36} alt="" />;
+    // }
 
     return <Icon name={icon as SkillIconName} size={36} color="currentColor" aria-hidden="true" />;
 }
 
 export function SkillTable() {
-    const [isOpen, setIsOpen] = useState(false);
-    const panelId = useId();
-
     return (
-        <section className="w-full max-w-5xl">
-            <button
-                type="button"
-                className="mx-auto flex items-center gap-3 border-b border-dark-cyan px-2 pb-2 font-mono text-sm uppercase tracking-[0.2em] text-current transition hover:text-dark-cyan focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-dark-cyan focus-visible:ring-offset-4 focus-visible:ring-offset-background"
-                aria-expanded={isOpen}
-                aria-controls={panelId}
-                onClick={() => setIsOpen((open) => !open)}
-            >
-                <span>Skills</span>
-                <Icon name="chevronDown" size={18} className={`transition-transform ${isOpen ? "rotate-180" : ""}`} aria-hidden="true" />
-            </button>
-
-            <div id={panelId} hidden={!isOpen} className="mt-4 border border-jet/20 bg-jet p-4 text-platinum sm:p-6">
-                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                    {skillGroups.map((group) => (
-                        <section key={group.name} aria-labelledby={`${panelId}-${group.name}`}>
-                            <h3 id={`${panelId}-${group.name}`} className="mb-3 font-mono text-xs uppercase tracking-[0.16em] text-dark-cyan">
-                                {group.name}
-                            </h3>
-                            <div className="grid grid-cols-2 gap-2">
-                                {group.skills.map(([name, icon]) => (
-                                    <Skill key={name} name={name}>
-                                        <SkillIcon icon={icon} />
-                                    </Skill>
-                                ))}
-                            </div>
-                        </section>
+        <div className="grid w-full max-w-7xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {skillGroups.map((group) => (
+                <Skill key={group.name} name={group.name}>
+                    {group.skills.map(([name, icon]) => (
+                        <span key={name} className="flex flex-col min-h-16 items-center justify-center text-platinum transition">
+                            <SkillIcon icon={icon} />
+                            <span className="mt-2 text-center font-mono text-[0.6rem] uppercase leading-tight tracking-[0.08em] text-platinum/80">
+                                {name}
+                            </span>
+                        </span>
                     ))}
-                </div>
-            </div>
-        </section>
+                </Skill>
+            ))}
+        </div>
     );
 }

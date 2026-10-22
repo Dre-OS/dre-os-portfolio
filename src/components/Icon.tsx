@@ -1,5 +1,9 @@
 import * as Devicon from "@devicon/react";
 import * as fi from "react-icons/fi";
+import * as si from "react-icons/si";
+import * as bs from "react-icons/bs";
+import * as di from "react-icons/di";
+import * as tb from "react-icons/tb";
 import type { ComponentType, SVGProps } from "react";
 
 export type IconProps = Omit<SVGProps<SVGElement>, "ref"> & {
@@ -49,6 +53,9 @@ const iconRegistry = {
   node: Devicon.NodejsPlainIcon,
   docker: Devicon.DockerPlainIcon,
   azure: Devicon.AzurePlainIcon,
+  linux: Devicon.LinuxPlainIcon,
+  windows: Devicon.Windows8OriginalIcon,
+  mermaid: si.SiMermaid,
   rabbitmq: Devicon.RabbitmqOriginalIcon,
   mongodb: Devicon.MongodbPlainIcon,
   mysql: Devicon.MysqlOriginalIcon,
@@ -56,8 +63,30 @@ const iconRegistry = {
   dotnet: Devicon.DotNetPlainIcon,
   tailwind: Devicon.TailwindcssOriginalIcon,
   wordpress: Devicon.WordpressPlainIcon,
+  nextjs:si.SiNextdotjs,
+  express:si.SiExpress,
+  fastify:si.SiFastify,
+  fastapi:si.SiFastapi,
+  prisma:si.SiPrisma,
+  ghcopilot:si.SiGithubcopilot,
+  ghactions:si.SiGithubactions,
+  vercel:si.SiVercel,
   mui:Devicon.MaterialuiPlainIcon,
   figma:Devicon.FigmaPlainIcon,
+  gimp:si.SiGimp,
+  photoshop:di.DiPhotoshop,
+  snapseed:tb.TbBrandSnapseed,
+  ollama:si.SiOllama,
+  openai:bs.BsOpenai,
+  claude:bs.BsClaude,
+  gemini:si.SiGooglegemini,
+  qwen:si.SiQwen,
+  claudecode:si.SiClaudecode,
+  cloudflare:si.SiCloudflare,
+  jupyter:Devicon.JupyterPlainIcon,
+  polars:si.SiPolars,
+  pandas:si.SiPandas,
+  numpy:si.SiNumpy,
   chevronLeft: fi.FiChevronLeft,
   chevronRight: fi.FiChevronRight,
   chevronDown: fi.FiChevronDown
