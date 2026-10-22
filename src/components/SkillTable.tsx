@@ -100,8 +100,8 @@ const skillGroups = [
     },
 ] as const;
 
-// const externalIcons = {
-// } as const;
+const externalIcons = {
+} as const;
 
 type SkillIconName = Exclude<(typeof skillGroups)[number]["skills"][number][1], keyof typeof externalIcons>;
 
