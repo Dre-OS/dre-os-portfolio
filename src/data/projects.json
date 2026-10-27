@@ -59,7 +59,7 @@
         "id": "8",
         "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,h_1000,w_1000/484868887_1079847657493153_457066377528613492_n_riignv.jpg",
-        "name": "ICT Proficiency Congratulatory post",
+        "name": "ICT Proficiency Congratulatory Post",
         "description": "A Facebook post edit for greeting a student on exemplary perfomance on the ICT Proficiency Exam",
         "tags": "creatives, layouting, gimp"
     },
@@ -84,11 +84,27 @@
         "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/v1792375392/spazio_styleguide_qnzd7h.webp",
         "name": "SPAZIO Style Guide",
-        "description": "A machine learning model for image recognition.",
+        "description": "A style guide created for the SPAZIO web app",
         "tags": "creatives, photo-editing, figma"
     },
     {
         "id": "12",
+        "logo": "",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,g_north_west,h_1000,w_1000/sagiptech-presentation_kjyqeo.webp",
+        "name": "Sagip Teknolohiya Presentation",
+        "description": "A slide presentation design for an outreach program",
+        "tags": "creatives, presentation, powerpoint"
+    },
+    {
+        "id": "13",
+        "logo": "",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,g_east,h_1000,w_1000/sagiptech-brochure_gwyv50.png",
+        "name": "Sagip Teknolohiya Brochure",
+        "description": "A brochure design for an outreach program",
+        "tags": "creatives, print-media, canva"
+    },
+    {
+        "id": "14",
         "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/t_Transparency/PAWS_LOGO2_fcvrsg.webp",
         "name": "PAWS Logo",
@@ -96,7 +112,7 @@
         "tags": "creatives, photo-editing, gimp, iconography"
     },
     {
-        "id": "13",
+        "id": "15",
         "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/t_Transparency/GymTayo_vtfsmp.webp",
         "name": "GymTayo Logo",
@@ -104,7 +120,7 @@
         "tags": "creatives, photo-editing, gimp, iconography"
     },
     {
-        "id": "14",
+        "id": "16",
         "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/t_Transparency/Logo_mono_2_qzeqnv.png",
         "name": "DRE_OS Logo",
@@ -112,7 +128,7 @@
         "tags": "creatives, photo-editing, gimp, iconography"
     },
     {
-        "id": "15",
+        "id": "17",
         "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/t_Transparency/little_red_server_logo_l2paxl.webp",
         "name": "Little Red Logo",
@@ -120,7 +136,7 @@
         "tags": "creatives, photo-editing, gimp, iconography"
     },
     {
-        "id": "16",
+        "id": "18",
         "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,g_south,h_1000,w_1000/PXL_20250105_110214279.MP_1_flh91i.jpg",
         "name": "Dash Coffee Snap",
@@ -128,7 +144,7 @@
         "tags": "creatives, photo-editing, snapseed, photography"
     },
     {
-        "id": "17",
+        "id": "19",
         "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,g_south,h_1000,w_1000/PXL_20241004_071755361_oslipe.jpg",
         "name": "Zambales Harbor Snap",
@@ -136,7 +152,7 @@
         "tags": "creatives, photo-editing, snapseed, photography"
     },
     {
-        "id": "18",
+        "id": "20",
         "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,g_south,h_1000,w_1000/1000045017_ckzxb5.jpg",
         "name": "Isabela Paddies Snap",
@@ -144,7 +160,7 @@
         "tags": "creatives, photo-editing, snapseed, photography"
     },
     {
-        "id": "19",
+        "id": "21",
         "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,g_south,h_1000,w_1000/1000022474_n9ogiz.jpg",
         "name": "Poblacion Snap",
@@ -152,7 +168,7 @@
         "tags": "creatives, photo-editing, snapseed, photography"
     },
     {
-        "id": "20",
+        "id": "22",
         "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,g_south,h_1000,w_1000/PXL_20250424_102602785_hjokmo.jpg",
         "name": "Golden Electric Snap",
@@ -160,7 +176,7 @@
         "tags": "creatives, photo-editing, snapseed, photography"
     },
     {
-        "id": "21",
+        "id": "23",
         "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,h_1000,w_1000/PXL_20250201_032326206_pwrn96.jpg",
         "name": "Flower Snap",
@@ -168,7 +184,7 @@
         "tags": "creatives, photo-editing, snapseed, photography"
     },
     {
-        "id": "22",
+        "id": "24",
         "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/v1792357495/24_bf6aho.webp",
         "name": "24",
@@ -176,7 +192,7 @@
         "tags": "creatives, photo-editing, gimp"
     },
     {
-        "id": "23",
+        "id": "25",
         "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,g_north,h_1000,w_1000/IMG20221220152812_5_ertfvt.webp",
         "name": "Power",

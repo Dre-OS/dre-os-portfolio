@@ -105,8 +105,6 @@ function HomeContent() {
                             ? "projects"
                             : `${selectedProjectTypes.join(" and ")} projects`}
                     </h1>
-                    {selectedProjectTypes.includes("software") || selectedProjectTypes.includes("all") ?
-                        <>
                             <div className="pb-10">
                                 <Carousel items={visibleProjects.map((project) => (
                                     <ProjectItem
@@ -130,8 +128,6 @@ function HomeContent() {
                                     />
                                 ))}
                             </div> */}
-                        </>
-                        : null}
                 </section>
                 <section id="projects" className="flex w-full scroll-mt-8 flex-col gap-8 pb-8 sm:gap-10 sm:pb-12">
                     {selectedProjectTypes.includes("all") || selectedProjectTypes.includes("creatives") ?
