@@ -106,13 +106,21 @@
     {
         "id": "14",
         "logo": "",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/t_Transparency/garland-plate_oywlig.webp",
+        "name": "Indra ITIL Training Lei Tag",
+        "description": "A centerpiece tag design for a Lei given to a trainer",
+        "tags": "creatives, print-media, gimp"
+    },
+    {
+        "id": "15",
+        "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/t_Transparency/PAWS_LOGO2_fcvrsg.webp",
         "name": "PAWS Logo",
         "description": "An early prototype logo of PAAW (formerly PAWS)",
         "tags": "creatives, photo-editing, gimp, iconography"
     },
     {
-        "id": "15",
+        "id": "16",
         "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/t_Transparency/GymTayo_vtfsmp.webp",
         "name": "GymTayo Logo",
@@ -120,7 +128,7 @@
         "tags": "creatives, photo-editing, gimp, iconography"
     },
     {
-        "id": "16",
+        "id": "17",
         "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/t_Transparency/Logo_mono_2_qzeqnv.png",
         "name": "DRE_OS Logo",
@@ -128,7 +136,7 @@
         "tags": "creatives, photo-editing, gimp, iconography"
     },
     {
-        "id": "17",
+        "id": "18",
         "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/t_Transparency/little_red_server_logo_l2paxl.webp",
         "name": "Little Red Logo",
@@ -136,7 +144,7 @@
         "tags": "creatives, photo-editing, gimp, iconography"
     },
     {
-        "id": "18",
+        "id": "19",
         "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,g_south,h_1000,w_1000/PXL_20250105_110214279.MP_1_flh91i.jpg",
         "name": "Dash Coffee Snap",
@@ -144,7 +152,7 @@
         "tags": "creatives, photo-editing, snapseed, photography"
     },
     {
-        "id": "19",
+        "id": "20",
         "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,g_south,h_1000,w_1000/PXL_20241004_071755361_oslipe.jpg",
         "name": "Zambales Harbor Snap",
@@ -152,7 +160,7 @@
         "tags": "creatives, photo-editing, snapseed, photography"
     },
     {
-        "id": "20",
+        "id": "21",
         "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,g_south,h_1000,w_1000/1000045017_ckzxb5.jpg",
         "name": "Isabela Paddies Snap",
@@ -160,7 +168,7 @@
         "tags": "creatives, photo-editing, snapseed, photography"
     },
     {
-        "id": "21",
+        "id": "22",
         "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,g_south,h_1000,w_1000/1000022474_n9ogiz.jpg",
         "name": "Poblacion Snap",
@@ -168,7 +176,7 @@
         "tags": "creatives, photo-editing, snapseed, photography"
     },
     {
-        "id": "22",
+        "id": "23",
         "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,g_south,h_1000,w_1000/PXL_20250424_102602785_hjokmo.jpg",
         "name": "Golden Electric Snap",
@@ -176,7 +184,7 @@
         "tags": "creatives, photo-editing, snapseed, photography"
     },
     {
-        "id": "23",
+        "id": "24",
         "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,h_1000,w_1000/PXL_20250201_032326206_pwrn96.jpg",
         "name": "Flower Snap",
@@ -184,7 +192,55 @@
         "tags": "creatives, photo-editing, snapseed, photography"
     },
     {
-        "id": "24",
+        "id": "25",
+        "logo": "",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,g_south,h_1000,w_1000/PXL_20240710_102016158_mz5xxw.jpg",
+        "name": "Cloud Snap",
+        "description": "A photo subject study involving a cloud",
+        "tags": "creatives, photo-editing, snapseed, photography"
+    },
+    {
+        "id": "26",
+        "logo": "",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,g_south,h_1000,w_1000/PXL_20260406_100528076_cjyhgh.jpg",
+        "name": "Baguio Sunset Snap",
+        "description": "A photo subject study involving a sunset along the mountains",
+        "tags": "creatives, photo-editing, snapseed, photography"
+    },
+    {
+        "id": "27",
+        "logo": "",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,h_1000,w_1000/PXL_20250605_230932652_pbmj9l.jpg",
+        "name": "Pangasinan Morning Snap",
+        "description": "A photo subject study involving a morning day",
+        "tags": "creatives, photo-editing, snapseed, photography"
+    },
+    {
+        "id": "28",
+        "logo": "",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,h_1000,w_1000/PXL_20250603_082003486_1_icc6ko.jpg",
+        "name": "Campus Golden Snap",
+        "description": "A photo subject study involving a golden hour in a campus",
+        "tags": "creatives, photo-editing, snapseed, photography"
+    },
+    {
+        "id": "29",
+        "logo": "",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,g_north,h_1000,w_1000/fotl_f3hhum.webp",
+        "name": "FOTL",
+        "description": "A photo editing project involving a distorted picture of various holiday lights",
+        "tags": "creatives, photo-editing, snapseed, photography"
+    },
+    {
+        "id": "30",
+        "logo": "",
+        "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,h_1000,w_1000/IMG_20221122_173654_wob5ao.webp",
+        "name": "Christmas Time",
+        "description": "A photo subject study and editing project involving a golden hour in a campus",
+        "tags": "creatives, photo-editing, snapseed, gimp, photography"
+    },
+    {
+        "id": "31",
         "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/v1792357495/24_bf6aho.webp",
         "name": "24",
@@ -192,7 +248,7 @@
         "tags": "creatives, photo-editing, gimp"
     },
     {
-        "id": "25",
+        "id": "32",
         "logo": "",
         "snapshot": "https://res.cloudinary.com/dihmbrhjw/image/upload/c_auto,g_north,h_1000,w_1000/IMG20221220152812_5_ertfvt.webp",
         "name": "Power",
